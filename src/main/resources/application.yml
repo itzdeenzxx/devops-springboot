@@ -1,7 +1,10 @@
+server:
+  port: ${PORT:8080}
+
 spring:
   datasource:
-    url: jdbc:postgresql://turntable.proxy.rlwy.net:17885/railway
-    username: postgres
-    password: owMBHOYobnjkBlWhJVzOkdjwnDZtxnZJ
+    url: ${DATABASE_URL:jdbc:postgresql://turntable.proxy.rlwy.net:17885/railway}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:owMBHOYobnjkBlWhJVzOkdjwnDZtxnZJ}
     driver-class-name: org.postgresql.Driver
     
